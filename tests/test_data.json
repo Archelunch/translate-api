@@ -1,0 +1,83 @@
+{
+    "word": "nice",
+    "definitions": [
+        {
+            "word_type": "adjective",
+            "definition": "pleasant; agreeable; satisfactory.",
+            "example": "we had a nice time",
+            "synonyms": [
+                "enjoyable",
+                "pleasant",
+                "pleasurable",
+                "agreeable",
+                "delightful",
+                "satisfying",
+                "gratifying",
+                "acceptable",
+                "to one's liking",
+                "entertaining",
+                "amusing",
+                "diverting",
+                "marvelous",
+                "good",
+                "bonny",
+                "couthy",
+                "irie"
+            ]
+        },
+        {
+            "word_type": "adjective",
+            "definition": "fine or subtle.",
+            "example": "a nice distinction",
+            "synonyms": [
+                "subtle",
+                "fine",
+                "delicate",
+                "minute",
+                "precise",
+                "exact",
+                "accurate",
+                "strict",
+                "close",
+                "careful",
+                "meticulous",
+                "rigorous",
+                "scrupulous",
+                "ultra-fine"
+            ]
+        },
+        {
+            "word_type": "adjective",
+            "definition": "fastidious; scrupulous.",
+            "example": null,
+            "synonyms": []
+        }
+    ],
+    "examples": [
+        "that wasn't very nice of him",
+        "Jeremy had been very nice to her",
+        "he's a really nice guy",
+        "a nice point",
+        "a nice distinction",
+        "we had a nice time"
+    ],
+    "translations": {
+        "adjective": [
+            "sch\u00f6n",
+            "nett",
+            "gut",
+            "h\u00fcbsch",
+            "sauber",
+            "fein",
+            "lieb",
+            "sympathisch",
+            "lecker",
+            "genau",
+            "heikel",
+            "pingelig",
+            "anspruchsvoll"
+        ]
+    },
+    "source_code": "en",
+    "target_code": "de"
+}
