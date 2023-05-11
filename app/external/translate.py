@@ -20,7 +20,10 @@ def get_translation(word: str, source_code: str, target_code: str) -> dict:
         if word_origin is None:
             raise HTTPException(status_code=404, detail="Word was not found in Google Translate")
 
-        definitions = translation.extra_data['parsed'][3][1][0]
+        try:
+            definitions = translation.extra_data['parsed'][3][1][0]
+        except Exception:
+            definitions = []
         def_list = []
         for defin in definitions:
             word_type = defin[0]
@@ -36,6 +39,9 @@ def get_translation(word: str, source_code: str, target_code: str) -> dict:
                 except Exception:
                     word_dict['synonyms'] = []
                 def_list.append(word_dict)
+        if len(def_list) == 0:
+            def_list = None
+
         try:
             examples = translation.extra_data['parsed'][3][2][0]
             parsed_examples = [e[1].replace("<b>", "").replace("</b>", "") for e in examples]
