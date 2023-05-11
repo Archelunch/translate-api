@@ -13,13 +13,16 @@ All requests are available at http://localhost:7500/docs
 ```GET /v1/word/?q=[word]&source_code=[code]&target_code=[code]```
 
 **q** - word to translate
+
 **source_code** and **target_code** - languages' codes. List of available languages is in the end of this README
 
 
 ```DELETE /v1/word/?q=[word]&source_code=[code]&target_code=[code]```
 
 **q** - word to delete
+
 **source_code** and **target_code** - languages' codes. List of available languages is in the end of this README
+
 
 In this version it's required to provide full information about word to delete. So it wouldn't delete  other word's translations.
 
@@ -27,10 +30,15 @@ In this version it's required to provide full information about word to delete. 
 ```GET /v1/words/?q=[word]&source_code=[code]&target_code=[code]&include_translations=[false]&include_definitions=[false]&sorting=1&skip=0&limit=10```
 
 **word** -  word or substring
+
 **source_code** and **target_code** - languages' codes. List of available languages is in the end of this README
+
 **include_translations** and **include_definitions** - booleans to include/exclude additional data. Synonyms are part of the definitions.
+
 **sorting** - can be -1 (Descending) or 1 (Ascending)
+
 **skip** and **limit** - for pagination
+
 
 It's required to pass at least one of the following params: **word**, **source_code**, **target_code**
 
