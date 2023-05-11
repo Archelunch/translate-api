@@ -16,6 +16,7 @@ All requests are available at http://localhost:7500/docs
 
 **source_code** and **target_code** - languages' codes. List of available languages is in the end of this README
 
+---
 
 ```DELETE /v1/word/?q=[word]&source_code=[code]&target_code=[code]```
 
@@ -26,6 +27,7 @@ All requests are available at http://localhost:7500/docs
 
 In this version it's required to provide full information about word to delete. So it wouldn't delete  other word's translations.
 
+---
 
 ```GET /v1/words/?q=[word]&source_code=[code]&target_code=[code]&include_translations=[false]&include_definitions=[false]&sorting=1&skip=0&limit=10```
 
